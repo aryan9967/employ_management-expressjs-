@@ -1,0 +1,129 @@
+.sign_in{
+    position: fixed;
+    display: flex;
+    /* border: 1px solid black; */
+    width: 62vw;
+    height : 70vh;
+    top: 15vh;
+    left: 19vw;
+    /* padding: 1.5%; */
+    border-radius: 3px;
+    /* box-shadow: 0px 0px 10px 4px rgb(149, 149, 149) ; */
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
+.sign_in .left{
+    width: 50%;
+    height: 100%;
+    /* border-right: 1px solid black; */
+    background: url("images/wave.png") no-repeat;
+    background-size: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+.left .image_container{
+    height: 40vh;
+    width: 22vw;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 15vh;
+    left: 3vw;
+    background: url("images/bg.png") center no-repeat;
+    background-size: cover;
+}
+.sign_in .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 7%;
+    /* padding-left: 2%; */
+}
+.admin_img{
+    display: flex;
+    justify-content: center;
+}
+.admin_logo{ 
+    /* border: 1px solid black; */
+    width: 90px;
+    margin-bottom: 5%;
+    height: 90px;
+    border-radius: 50%;
+    background: url("images/avatar.png") center no-repeat;
+    background-size: cover;
+}
+.header{
+    font-size: 4.8vh;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5%;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+.align_center{
+    display: flex;
+    justify-content: center;
+}
+#sign_email{
+    background-image: url("images/envelope.png") ;
+    background-repeat: no-repeat;
+    background-size: 20px 15px;
+    background-position-y: center;
+    background-position-x: 5px;
+    background-color: white;
+}
+#sign_password{
+    background-image: url("images/lock.png") ;
+    background-repeat: no-repeat;
+    background-size: 15px 18px;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+.sign_input{
+    width: 80%;
+    height: 6vh;
+    padding-left: 35px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    font-size: 2.2vh;
+    margin-bottom: 5%;
+    background-color: white;
+}
+#sign_password{
+    margin-bottom: 10%;
+}
+.sign_input:focus{
+    border-bottom: 3px solid rgb(30 191 133);
+    background-color: white;
+}
+.sign_incontainer{
+    display: flex;
+    justify-content: center;
+}
+#sign_inbtn{
+    height: 38px;
+    width: 80%;
+    border: none;
+    background-color: rgb(30 191 133);
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+#sign_inbtn:hover{
+    cursor: pointer;   
+}
+#sign_inbtn:active{
+    background-color:rgb(30 191 133); 
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+

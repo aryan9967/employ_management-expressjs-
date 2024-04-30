@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="sign_in.css">
+    <link rel="stylesheet" href="table_details.css">
+    <script src="https://kit.fontawesome.com/c33097aea5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="mainscreen">
+        <div class="seach_container">
+            <input type="text" id="search_value" maxlength="10" placeholder="Enter contact no.">
+            <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <table id="table">
+
+        </table>
+        <div class="bottom" id="bottom">
+            <button id="add_record">Add Employee</i></button>
+        </div>
+    </div>
+    <div class="sign_in" id="sign_in_form">
+        <div class="left">
+            <div class="image_container">
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="admin_img">
+                <div class="admin_logo"></div>
+            </div>
+            <div class="header">WELCOME</div>
+            <div class="align_center"><input type="text" id="sign_email" placeholder="Email" class="sign_input"></div>
+            <div class="align_center"><input type="password" id="sign_password" placeholder="Password"
+                    class="sign_input"></div>
+            <div class="sign_incontainer"><button id="sign_inbtn">LOGIN</button></div>
+        </div>
+    </div>
+
+
+
+    <div class="form" id="update_form_container">
+        <button class="close_btn" id="close_btn"><i class="fa-solid fa-xmark"></i></button>
+        <form id="update_form">
+            <div class="container">
+                <div class="left">
+                    <input id="first_name" type="text" name="first_name" placeholder="First name" class="input_txt"
+                        required>
+                    <br><br>
+                    <input id="last_name" type="text" name="last_name" placeholder="Last name" class="input_txt"
+                        required>
+                    <br><br>
+                    <input id="middle_name" type="text" name="middle_name" placeholder="Middle name" class="input_txt">
+                    <br><br>
+                    <input id="email" type="text" name="email" placeholder="Email" class="input_txt" required>
+                    <br><br>
+                    <input type="file" name="file" id="image_up">
+                </div>
+                <div class="right">
+                    <input id="contact" name="contact" type="tel" placeholder="Contact" class="input_txt" maxlength="10"
+                        readonly required>
+                    <br><br>
+                    <input id="address" name="address" type="text" placeholder="Address" class="input_txt" required>
+                    <br><br>
+                    <input id="city" name="city" type="text" placeholder="city" class="input_txt" required>
+                    <br><br>
+                    <input id="dob" name="dob" type="text" placeholder="DOB" class="input_txt" required>
+                </div>
+            </div>
+            <input type="submit" id="applybtn" value="Confirm">
+        </form>
+
+    </div>
+
+
+    <div class="form" id="create_form_container">
+
+        <button class="close_btn" id="close_btn2"><i class="fa-solid fa-xmark"></i></button>
+        <form id="create_form">
+            <div class="container">
+                <div class="left">
+                    <input id="first_name2" name="firstname" type="text" placeholder="First name" class="input_txt"
+                        required>
+                    <br><br>
+                    <input id="last_name2" name="lastname" type="text" placeholder="Last name" class="input_txt"
+                        required>
+                    <br><br>
+                    <input id="middle_name2" name="middlename" type="text" placeholder="Middle name" class="input_txt">
+                    <br><br>
+                    <input id="email2" name="email" type="text" placeholder="Email" class="input_txt" required>
+                    <br><br>
+                    <input type="file" name="file" id="image_up2">
+                </div>
+                <div class="right">
+                    <input id="contact2" name="contact" type="tel" placeholder="Contact" class="input_txt"
+                        maxlength="10" required>
+                    <br><br>
+                    <input id="address2" name="address" type="text" placeholder="Address" class="input_txt" required>
+                    <br><br>
+                    <input id="city2" name="city" type="text" placeholder="city" class="input_txt" required>
+                    <br><br>
+                    <input id="dob2" name="dob" type="text" placeholder="DOB" class="input_txt" required>
+                </div>
+            </div>
+            <input type="submit" value="confirm" id="create_btn">
+        </form>
+    </div>
+    <div class="table_details" id="table_details">
+        <button class="close_btn" id="close_btn3"><i class="fa-solid fa-xmark"></i></button>
+        <div class="itm_left">
+            <div class="itm_image" id="itm_image"></div>
+            <div class="img_name" id="image_name"></div>
+        </div>
+        <div class="item_right">
+            <div class="table_item">
+                <div class="item_label">First name : </div><input type="text" class="table_itm_val" id="first_name3"
+                    readonly>
+            </div>
+            <div class="table_item">
+                <div class="item_label">Last name : </div><input type="text" class="table_itm_val" id="last_name3"
+                    readonly>
+            </div>
+            <div class="table_item">
+                <div class="item_label">Middle name : </div><input type="text" class="table_itm_val" id="middle_name3"
+                    readonly>
+            </div>
+            <div class="table_item">
+                <div class="item_label">Email : </div><input type="text" class="table_itm_val" id="email3" readonly>
+            </div>
+            <div class="table_item">
+                <div class="item_label">Contact : </div><input type="text" class="table_itm_val" id="contact3" readonly>
+            </div>
+            <div class="table_item">
+                <div class="item_label">Address : </div><input type="text" class="table_itm_val" id="address3" readonly>
+            </div>
+            <div class="table_item">
+                <div class="item_label">City : </div><input type="text" class="table_itm_val" id="city3" readonly>
+            </div>
+            <div class="table_item">
+                <div class="item_label">DOB : </div><input type="text" class="table_itm_val" id="dob3" readonly>
+            </div>
+        </div>
+    </div>
+
+    <script src="client.js">
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "employ_management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "aryan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "formidable": "^3.5.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}

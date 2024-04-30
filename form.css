@@ -1,0 +1,100 @@
+
+.form{
+    height: 46vh;
+    width: 40vw;
+    /* border: 1px solid black; */
+    padding:25px ;
+    background-color:rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 3px rgb(149, 149, 149) ;
+    position: fixed;
+    left: 30vw;
+    top: 27vh;
+    display: none;
+}
+.container{
+    display: flex;
+    margin-bottom: 6%;
+}
+.left{
+    width: 50%;
+    height: 100%;
+}
+.right{
+    width: 50%;
+    height: 100%;
+}
+.input_txt{
+    height:10%;
+    /* margin:5px; */
+    width:90%;
+    /* padding:10px; */
+    padding-top: 10px;
+    padding-bottom: 2px;
+    font-size: 17;
+    border:none;
+    background-color:rgb(255, 255, 255) ;
+    border-bottom:1px solid gray;
+    margin-top:-3px;
+    margin-bottom: 3%;
+    outline: none;
+}
+#contact{
+    color: rgb(153, 153, 153);
+}
+#applybtn{
+    display: block;
+    width: 28%;
+    height: 40px;
+    margin: auto;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: white;
+    background-color: #3471e1;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+#create_btn{
+    display: block;
+    width: 28%;
+    height: 40px;
+    margin: auto;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: white;
+    background-color: #3471e1;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+#applybtn:hover{
+    cursor: pointer;
+}
+#applybtn:active{
+    background-color: #003088;
+}
+#create_btn:hover{
+    cursor: pointer;
+}
+#create_btn:active{
+    background-color: #003088;
+}
+.close_btn{
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    color: white;
+    background-color: #e13434;
+    right:0;
+    top: 0;
+}
+.close_btn:hover{
+    cursor: pointer;
+    background-color: #e21919;
+}
+.close_btn:active{
+    background-color: #b00707;
+}
